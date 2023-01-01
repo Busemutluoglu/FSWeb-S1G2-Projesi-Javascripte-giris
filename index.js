@@ -20,7 +20,17 @@ Aşağıdakileri yapın:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let surucuYasi=25
 
+if (surucuYasi>18) {
+
+  console.log(true);
+
+} else {
+
+  console.log(false);
+
+}
 
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
@@ -34,7 +44,18 @@ Aşağıdakileri yapınız:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let birinciDeger = 13;
 
+let ikinciDegeri = 10;
+
+
+
+if (birinciDeger>ikinciDegeri) {
+
+  birinciDeger = 20;
+}
+
+console.log(birinciDeger);
 
 
 
@@ -49,8 +70,11 @@ Aşağıdakileri yapın:
    İPUCU: Number metoduna bakabilirsin
 */
 
+let str = "1999";
 
+let str_to_number = Number(str);
 
+console.log(str_to_number)
 
 /*
 Görev 1d - Çarpma
@@ -61,8 +85,11 @@ Aşağıdakileri yapın:
    3. a ve b'yi çarpıp, sonucu dönün
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b){
+
+return(a*b);
+
+
 }
 
 
@@ -77,11 +104,14 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(insaninYasi){
+
+  let hesaplananYas= insaninYasi * 7;
+
+  return (hesaplananYas);
 }
 
-
+console.log(kopeginYasi(10));
 
 /* Görev 3 */
 
@@ -104,8 +134,26 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yapın.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 
-function oyun(oyuncu, bilgisayar){
-  /*buraya kodunu yazabilirsin*/
+function oyun(T, K, M){
+
+  
+  if ( (math.round(Math.random()*2)) == 0) {
+
+  oyuncu1,oyuncu2 = T} else if ((math.round(Math.random()*2)) == 1){
+
+    oyuncu1,oyuncu2 = K } else if 
+
+      ((math.round(Math.random()*2)) == 2) {
+    
+        oyuncu1,oyuncu2 = M }
+
+        
+      
+    
+    
+  
+  
+
 }
 
 
@@ -120,10 +168,15 @@ Aşağdakileri milDonusturucu fonksiyonunu kullanarak yapın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
+function milDonusturucu(km){
+  
+  let mil = (0.621371 * km);
 
+  return mil;
+  
+
+}
+console.log (milDonusturucu(5));
 
 
 //Görev 4b - Santimetreden Feet
@@ -134,11 +187,14 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 3. feet değerini geri dönün
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm){
+  
+  let feet = (cm / 30.48);
+
+  return feet;
 }
 
-
+console.log(feetDonusturucu(5));
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımızı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
@@ -153,10 +209,17 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
-      /*buraya kodunu yazabilirsin*/
+function cocukSarkisi(sayı){
+      
+
+  for (let i = sayı; i > 0; i--)
+
+  console.log (i + "  küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!");
+
+
 }
 
+console.log(cocukSarkisi(5));
 
 /* Görev 6 : Not Hesaplayıcı */
 
@@ -173,9 +236,33 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
-/*buraya kodunu yazabilirsin*/
-}
+function notHesapla(not){
+
+  if (not > 90) {
+
+    return ("A aldın")
+
+  } else if 
+
+    (80 < not < 90) {
+
+      return ("B aldın") 
+
+    } else if ( 70 < not < 80 ) {
+
+      return ("C aldın")
+
+    } else if ( 60 < not < 70) {
+
+      return ("D aldın") 
+
+      } else if (not < 60) { 
+
+        return ("F aldın")
+      }
+    }
+    
+  console.log (notHesapla(90));
 
 
 
@@ -191,8 +278,15 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yapın.
 */
 
 
-function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function sesliHarfSayaci(harf) {
+  
+  let sesliharf = ("a", "e", "o", "ö", "i", "ı", "u", "ü")
+
+  if (harf=sesliharf.includes()) {
+
+    return 
+  }
+
 }
 
 
